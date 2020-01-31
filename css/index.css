@@ -126,6 +126,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+html {
+  font-size: 62.5%;
+}
 nav {
   display: flex;
   justify-content: space-around;
@@ -133,6 +136,9 @@ nav {
 nav a {
   text-decoration: none;
   color: limegreen;
+}
+.icon {
+  height: 2rem;
 }
 body {
   display: flex;

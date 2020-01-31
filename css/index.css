@@ -135,37 +135,84 @@ nav {
 }
 nav a {
   text-decoration: none;
+  font-size: 2rem;
   color: limegreen;
 }
-.icon {
-  height: 2rem;
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer .icon-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .icon-container button {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+}
+footer .icon-container button i {
+  font-size: xx-large;
+  align-self: center;
+}
+* {
+  border: 2px solid red;
 }
 body {
   display: flex;
   flex-flow: column;
   background-color: lavender;
 }
-header {
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-form {
+main header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main form {
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   color: blue;
 }
-section {
+main section {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
 }
-img {
+main .main-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+main .main-content h1 {
+  font-size: 6rem;
+  align-self: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+main .main-content h2 {
+  font-size: 4rem;
+  align-self: center;
+  margin-top: 0rem;
+  margin-bottom: 3rem;
+}
+main .main-content p {
+  font-size: 2rem;
+}
+main img {
   height: 4rem;
 }
-.login,
-.signup {
+main .login,
+main .signup {
   width: 80%;
 }

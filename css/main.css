@@ -1,3 +1,44 @@
+main {
+    display: flex;
+    flex-flow: column;
+    background-color: lavender;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    color: limegreen;
+}
+
 form {
-    width: 10rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: blue;
+}
+
+section {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+img {
+    height: 4rem;
+}
+
+.login,
+.signup {
+    width: 80%;
 }

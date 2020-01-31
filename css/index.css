@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html,
 body,
 div,
@@ -84,17 +83,14 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-
-
 /* HTML5 display-role reset for older browsers */
-
 article,
 aside,
 details,
@@ -106,77 +102,64 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+  display: block;
 }
-
 body {
-    line-height: 1;
+  line-height: 1;
 }
-
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
-
 blockquote,
 q {
-    quotes: none;
+  quotes: none;
 }
-
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: '';
-    content: none;
+  content: '';
+  content: none;
 }
-
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-
 nav {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
-
 a {
-    text-decoration: none;
-    color: limegreen;
+  text-decoration: none;
+  color: limegreen;
 }
-
 main {
-    display: flex;
-    flex-flow: column;
-    background-color: lavender;
+  display: flex;
+  flex-flow: column;
+  background-color: lavender;
 }
-
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
 form {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    color: blue;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: blue;
 }
-
 section {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
-
 img {
-    height: 4rem;
+  height: 4rem;
 }
-
 .login,
 .signup {
-    width: 80%;
+  width: 80%;
 }

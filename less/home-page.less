@@ -44,17 +44,47 @@ main {
         h1 {
             font-size: 6rem;
             align-self: center;
-            .margTB(3rem, 3rem);
+            .margTB(.6rem, 3rem);
         }
 
         h2 {
             font-size: 4rem;
             align-self: center;
-            .margTB(0rem, 3rem);
+            .margTB(3rem, 1rem);
+        }
+
+        img {
+            height: 70vh;
+            width: 80%;
+            .margLR(10rem, 10rem);
+            .margTB(2rem, 0rem);
+        }
+
+        .text-container {
+            width: 90%;
+            display: flex;
+            flex-flow: row wrap;
+            align-self: center;
+            .margLR(0, 2rem);
         }
 
         p {
             font-size: 2rem;
+            .margTB(.6rem, 4rem);
+            align-self: flex-end;
+            padding: 0 4rem;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            li {
+                align-self: center;
+                font-size: 1.8rem;
+                .margTB(0, .5rem);
+            }
         }
     }
     

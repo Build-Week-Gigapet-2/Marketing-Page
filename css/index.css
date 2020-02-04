@@ -128,14 +128,16 @@ table {
 }
 html {
   font-size: 62.5%;
+  background-color: lavender;
 }
 nav {
+  width: 75%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 nav a {
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: limegreen;
 }
 footer {
@@ -143,7 +145,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 3rem;
+  margin-top: 10rem;
   margin-bottom: 3rem;
 }
 footer .icon-container {
@@ -155,97 +157,88 @@ footer .icon-container button {
   display: flex;
   flex-direction: column;
   font-size: 1.6rem;
+  height: 6rem;
 }
 footer .icon-container button i {
   font-size: xx-large;
   align-self: center;
 }
-* {
-  border: 2px solid red;
-}
-body {
+header {
+  height: 6rem;
+  background-color: purple;
   display: flex;
-  flex-flow: column;
-  background-color: lavender;
-}
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-main header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-main form {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-evenly;
-  color: blue;
+  align-items: center;
 }
-main section {
+header .pet-img {
+  width: 20%;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
-main .main-content {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
+header .pet-img img {
+  height: 2rem;
 }
-main .main-content h1 {
-  font-size: 6rem;
-  align-self: center;
-  margin-top: 0.6rem;
-  margin-bottom: 3rem;
-}
-main .main-content h2 {
-  font-size: 4rem;
-  align-self: center;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-}
-main .main-content img {
-  height: 70vh;
-  width: 80%;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  margin-top: 2rem;
-  margin-bottom: 0rem;
-}
-main .main-content .text-container {
-  width: 90%;
-  display: flex;
-  flex-flow: row wrap;
-  align-self: center;
-  margin-left: 0;
-  margin-right: 2rem;
-}
-main .main-content p {
-  font-size: 2rem;
-  margin-top: 0.6rem;
-  margin-bottom: 4rem;
-  align-self: flex-end;
-  padding: 0 4rem;
-}
-main .main-content ul {
+.main-content {
+  margin-top: 6rem;
+  width: 97%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-main .main-content ul li {
+.main-content h2 {
   align-self: center;
+  font-size: 3.75rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+.main-content .text-container1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-content .text-container1 h1 {
+  align-self: center;
+  font-size: 8rem;
+  color: blueviolet;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.main-content .text-container1 h2 {
+  font-size: 2.8rem;
+  width: 65%;
+  margin-left: 3rem;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+}
+.main-content .text-container2 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 97%;
   font-size: 1.8rem;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+  align-self: center;
 }
-main img {
-  height: 4rem;
+.main-content img {
+  height: 40vh;
+  width: 97%;
+  align-self: center;
+  margin-bottom: 4rem;
 }
-main .login,
-main .signup {
-  width: 80%;
+.main-content .list {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.main-content .list ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+.main-content .list ul li {
+  list-style-type: circle;
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  color: darkblue;
 }

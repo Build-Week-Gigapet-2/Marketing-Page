@@ -143,10 +143,19 @@ nav a {
 footer {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   margin-top: 10rem;
   margin-bottom: 3rem;
+}
+footer h3 {
+  align-self: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+footer .two {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 footer .icon-container {
   width: 100%;

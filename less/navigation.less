@@ -2,11 +2,25 @@ nav {
     width: 75%;
     display: flex;
     justify-content: space-between;
+
+    @media @desk {
+        
+        font-size: 20rem;
+    }
     
     a {
         text-decoration: none;
         font-size: 1.2rem;
-        color: limegreen;
+        color: @anch-color;
+        
+        &:hover {
+            color: @anch-hov;
+        }
+
+        @media @desk{
+            font-size: 5rem;
+            
+        }
     }
 }
     

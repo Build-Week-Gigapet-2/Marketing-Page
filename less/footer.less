@@ -4,28 +4,55 @@ footer {
     flex-direction: column;
     justify-content: center;
     .margTB(10rem, 3rem);
+
+    @media @desk {
+        .margTB(30rem; 9rem);
+        width: 50%;
+        justify-content: flex-start;
+        margin-left: 6rem;
+    }
     
     h3 {
         align-self: center;
         font-size: 2rem;
         margin-bottom: 3rem;
+
+        @media @desk {
+            font-size: 4rem;
+            margin-bottom: 12rem;
+            align-self: flex-start;
+        }
     }
     
     .two {
         .margTB(3rem; 1rem);
+
+        @media @desk {
+            .margTB(9rem; 3rem);
+        }
     }
 
     .icon-container {
         width: 100%;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
+        
+            @media @desk{
+                width: 60%;
+                justify-content: flex-start;
+            }
 
         button {
             display: flex;
             flex-direction: column;
             font-size: 1.6rem;
             height: 6rem;
+
+            @media @desk {
+                margin-right: 2rem;
+            }
              
+
             i {
                 font-size: xx-large;
                 align-self: center;

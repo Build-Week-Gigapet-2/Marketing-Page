@@ -385,12 +385,17 @@ header .pet-img img {
     margin-top: 2rem;
   }
 }
-#about .main-content .list-container {
+#about .main-content .list {
+  justify-content: flex-start;
+  margin-left: 10rem;
+  width: 100%;
+}
+#about .main-content .list .list-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-#about .main-content .list-container img {
+#about .main-content .list .list-container img {
   height: 20rem;
   width: 20rem;
   margin: 0;

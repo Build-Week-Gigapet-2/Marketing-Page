@@ -385,3 +385,13 @@ header .pet-img img {
     margin-top: 2rem;
   }
 }
+#about .main-content .list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#about .main-content .list-container img {
+  height: 20rem;
+  width: 20rem;
+  margin: 0;
+}

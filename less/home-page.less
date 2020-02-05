@@ -1,18 +1,27 @@
 header {
     height: 6rem;
-    background-color: purple;
+    background-color: @header-bgc;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     
+    @media @desk {
+        height: 20rem;
+    }
+
     .pet-img {
+        height: 80%;
         width: 20%;
         display: flex;
         justify-content: flex-end;
         
         img {
-            height: 2rem;
+            height: 4rem;
+
+                @media @desk {
+                    height: 15rem;        
+                }
         }
     }
 }
@@ -23,11 +32,15 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
     h2 {
         align-self: center;
         font-size: 3.75rem;
         .margTB(2rem, 4rem);
+        
+        @media @desk {
+            .margTB(6rem, 6rem);
+        }    
     }
     
     .text-container1 {
@@ -41,6 +54,10 @@ header {
             font-size: 8rem;
             color: blueviolet;
             .margTB(2rem, 2rem);
+
+            @media @desk {
+                .margTB(6rem, 6rem);
+            }
         }
         
         h2{
@@ -48,6 +65,12 @@ header {
             width: 65%;
             margin-left: 3rem;
             .margTB(4rem; 5rem);
+
+            @media @desk {
+                width: 85%;
+                font-size: 6rem;
+                .margTB(12rem; 15rem);
+            }
         }
     }
 
@@ -56,6 +79,10 @@ header {
         width: 97%;
         font-size: 1.8rem;
         align-self: center;
+
+        @media @desk {
+            font-size: 3.6rem;
+        }
         
     }
     
@@ -64,6 +91,13 @@ header {
         width: 97%;
         align-self: center;
         margin-bottom: 4rem;
+
+        @media @desk {
+            height: 90vh;
+            width: 90%;
+            align-self: center;
+            .margTB(3rem; 12rem);
+        }
     }
 
     .list {
@@ -77,11 +111,20 @@ header {
             justify-content: center;
             width: 50%;
 
+            @media @desk {
+                margin-top: 12rem;
+            }
+
             li {
                 list-style-type: circle;
                 margin-top: 2rem;
                 font-size: 1.6rem;
-                color: darkblue;        
+                color: darkblue;  
+                
+                @media @desk {
+                    font-size: 3.2rem;
+                    margin-top: 6rem;
+                }
             }
         }
     }

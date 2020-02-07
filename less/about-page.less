@@ -18,50 +18,83 @@
         }
     }
 
-        .list {
-
-            @media @desk {
-                margin-top: 2rem;
-            }
-
-            ul {
-                @media @desk {
-                    margin-top: 2rem;
-                }
-
-                li {
-                    @media @desk {
-                        margin-top: 2rem;
-                    }
-                }
-            }
-        }
+       
     }
 
 
 #about .main-content .list {
 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-left: 10rem;
-    width: 100%;
+        @media @desk {
+            margin-top: 2rem;
+        }
 
-    .list-container {
-    
+        @media @desk {
+            margin-top: 2rem;
+        }
+
+        .list-container ul {
+                
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-left: 10rem;
+            width: 100%;
+        }
+    }
+
+    li {
+        
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-            
-            img {
-                height: 20rem;
-                width: 20rem;
-                margin: 0;
+        
+        @media @desk {
+            margin-top: 2rem;
+        }
+
+        .profile {
+            height: 20rem;
+            width: 20rem;
+            margin: 0;
+
+            @media @tablet {
+                align-self: flex-start;
             }
-            
-            icon-container {
-                display: flex;
-                
+
+            @media @tablet {
+                align-self: flex-start;
             }
         }
-    }
+        
+        section {
+            
+            display: flex;
+            flex-direction: row;
+
+            @media @tablet {
+                width: 100%;
+                flex-flow: row wrap;
+            }
+
+            @media @desk {
+                width: 50%;
+                flex-flow: row wrap;
+            }
+        
+            .bio {
+                display: flex;
+
+                p {
+                    flex-flow: row wrap;
+                }
+            }
+
+            icon-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    
+}
+                

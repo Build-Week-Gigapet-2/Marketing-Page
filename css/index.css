@@ -359,10 +359,8 @@ header .pet-img img {
     margin-top: 6rem;
   }
 }
-@media (min-width:1024px) {
-  #about .text-container1 {
-    text-align: center;
-  }
+#about {
+  text-align: center;
 }
 @media desk {
   #about .text-container1 h2 {
@@ -375,6 +373,9 @@ header .pet-img img {
     margin-top: 5rem;
     margin-bottom: 5rem;
   }
+}
+#about .main-content .list {
+  text-align: center;
 }
 @media (min-width:1024px) {
   #about .main-content .list {
@@ -390,8 +391,8 @@ header .pet-img img {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-left: 10rem;
-  width: 100%;
+  margin-left: 2rem;
+  width: 75%;
 }
 li {
   display: flex;
@@ -406,7 +407,6 @@ li {
 li .profile {
   height: 20rem;
   width: 20rem;
-  margin: 0;
 }
 @media (min-width:600px) {
   li .profile {

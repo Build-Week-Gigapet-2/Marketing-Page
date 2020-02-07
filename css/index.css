@@ -159,7 +159,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 10rem;
+  margin-top: 3rem;
   margin-bottom: 3rem;
 }
 @media (min-width:1024px) {
@@ -348,88 +348,44 @@ header .pet-img img {
   }
 }
 #about {
+  width: 95%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
   text-align: center;
 }
-@media desk {
-  #about .text-container1 h2 {
-    margin-top: 12rem;
-    margin-bottom: 5rem;
-  }
+#about .intro {
+  font-size: 3rem;
 }
-@media desk {
-  #about .text-container2 h2 {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-  }
+#about .main-content {
+  border: 1px solid darkorchid;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
-#about .main-content .list {
-  text-align: center;
-}
-@media (min-width:1024px) {
-  #about .main-content .list {
-    margin-top: 2rem;
-  }
-}
-@media (min-width:1024px) {
-  #about .main-content .list {
-    margin-top: 2rem;
-  }
-}
-#about .main-content .list .list-container ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-left: 2rem;
-  width: 75%;
-}
-li {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-@media (min-width:1024px) {
-  li {
-    margin-top: 2rem;
-  }
-}
-li .profile {
-  height: 20rem;
-  width: 20rem;
-}
-@media (min-width:600px) {
-  li .profile {
-    align-self: flex-start;
-  }
-}
-@media (min-width:600px) {
-  li .profile {
-    align-self: flex-start;
-  }
-}
-li section {
-  display: flex;
-  flex-direction: row;
-}
-@media (min-width:600px) {
-  li section {
-    width: 100%;
-    flex-flow: row wrap;
-  }
-}
-@media (min-width:1024px) {
-  li section {
-    width: 50%;
-    flex-flow: row wrap;
-  }
-}
-li section .bio {
-  display: flex;
-}
-li section .bio p {
-  flex-flow: row wrap;
-}
-li section icon-container {
+#about .main-content .member {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+#about .main-content .member h2 {
+  font-size: 1.8rem;
+}
+#about .main-content .member h3 {
+  font-style: italic;
+}
+#about .main-content .member .profile {
+  height: 85px;
+  width: 85px;
+  align-self: center;
+}
+#about .main-content .member h4 {
+  font-size: 1.6rem;
+}
+#about .main-content .member p {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }

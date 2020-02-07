@@ -252,6 +252,7 @@ header .pet-img img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 .main-content h2 {
   font-family: 'Indie Flower', cursive;
@@ -268,7 +269,7 @@ header .pet-img img {
   }
 }
 .main-content .text-container1 {
-  width: 100%;
+  width: 97%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -358,6 +359,11 @@ header .pet-img img {
     margin-top: 6rem;
   }
 }
+@media (min-width:1024px) {
+  #about .text-container1 {
+    text-align: center;
+  }
+}
 @media desk {
   #about .text-container1 h2 {
     margin-top: 12rem;
@@ -371,17 +377,12 @@ header .pet-img img {
   }
 }
 @media (min-width:1024px) {
-  #about .list {
+  #about .main-content .list {
     margin-top: 2rem;
   }
 }
 @media (min-width:1024px) {
-  #about .list ul {
-    margin-top: 2rem;
-  }
-}
-@media (min-width:1024px) {
-  #about .list ul li {
+  #about .main-content .list {
     margin-top: 2rem;
   }
 }
@@ -392,33 +393,54 @@ header .pet-img img {
   margin-left: 10rem;
   width: 100%;
 }
-#about .main-content .list .list-container ul li {
+li {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-#about .main-content .list .list-container ul li .profile {
+@media (min-width:1024px) {
+  li {
+    margin-top: 2rem;
+  }
+}
+li .profile {
   height: 20rem;
   width: 20rem;
   margin: 0;
 }
-#about .main-content .list .list-container ul li section {
-  display: flex;
-  flex-direction: column;
+@media (min-width:600px) {
+  li .profile {
+    align-self: flex-start;
+  }
 }
 @media (min-width:600px) {
-  #about .main-content .list .list-container ul li section {
+  li .profile {
+    align-self: flex-start;
+  }
+}
+li section {
+  display: flex;
+  flex-direction: row;
+}
+@media (min-width:600px) {
+  li section {
     width: 100%;
     flex-flow: row wrap;
   }
 }
 @media (min-width:1024px) {
-  #about .main-content .list .list-container ul li section {
-    width: 100%;
+  li section {
+    width: 50%;
     flex-flow: row wrap;
   }
 }
-#about .main-content .list .list-container ul li section icon-container {
+li section .bio {
+  display: flex;
+}
+li section .bio p {
+  flex-flow: row wrap;
+}
+li section icon-container {
   display: flex;
   flex-direction: column;
   justify-content: center;

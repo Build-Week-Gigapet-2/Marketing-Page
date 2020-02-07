@@ -1,100 +1,98 @@
-   //about-page CSS styles
+//about-page CSS styles
 
- #about {
+#about {
+  text-align: center;
 
-    .text-container1 {
-        h2 {
-            @media desk {
-                .margTB(12rem; 5rem);
-            }
-        }
-    }
-    
-    .text-container2 {
-        h2 {
-            @media desk {
-                .margTB(5rem; 5rem);
-            }
-        }
+  .text-container1 {
+    @media @desk {
     }
 
-       
+    h2 {
+      @media desk {
+        .margTB(12rem; 5rem);
+      }
     }
+  }
 
+  .text-container2 {
+    h2 {
+      @media desk {
+        .margTB(5rem; 5rem);
+      }
+    }
+  }
+}
 
 #about .main-content .list {
+  
+    text-align: center;
 
-        @media @desk {
-            margin-top: 2rem;
-        }
+  @media @desk {
+    margin-top: 2rem;
+  }
 
-        @media @desk {
-            margin-top: 2rem;
-        }
+  @media @desk {
+    margin-top: 2rem;
+  }
 
-        .list-container ul {
-                
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            margin-left: 10rem;
-            width: 100%;
-        }
+  .list-container ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 10rem;
+    width: 100%;
+  }
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  @media @desk {
+    margin-top: 2rem;
+  }
+
+  .profile {
+    height: 20rem;
+    width: 20rem;
+    margin: 0;
+
+    @media @tablet {
+      align-self: flex-start;
     }
 
-    li {
-        
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        
-        @media @desk {
-            margin-top: 2rem;
-        }
+    @media @tablet {
+      align-self: flex-start;
+    }
+  }
 
-        .profile {
-            height: 20rem;
-            width: 20rem;
-            margin: 0;
+  section {
+    display: flex;
+    flex-direction: row;
 
-            @media @tablet {
-                align-self: flex-start;
-            }
+    @media @tablet {
+      width: 100%;
+      flex-flow: row wrap;
+    }
 
-            @media @tablet {
-                align-self: flex-start;
-            }
-        }
-        
-        section {
-            
-            display: flex;
-            flex-direction: row;
+    @media @desk {
+      width: 50%;
+      flex-flow: row wrap;
+    }
 
-            @media @tablet {
-                width: 100%;
-                flex-flow: row wrap;
-            }
+    .bio {
+      display: flex;
 
-            @media @desk {
-                width: 50%;
-                flex-flow: row wrap;
-            }
-        
-            .bio {
-                display: flex;
+      p {
+        flex-flow: row wrap;
+      }
+    }
 
-                p {
-                    flex-flow: row wrap;
-                }
-            }
-
-            icon-container {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            }
-        }
-    
+    icon-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
 }
-                

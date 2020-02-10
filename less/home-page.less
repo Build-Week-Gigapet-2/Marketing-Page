@@ -1,146 +1,139 @@
 header {
-    height: 6rem;
-    background-color: @header-bgc;
+  height: 6rem;
+  background-color: @header-bgc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  @media @tablet {
+    height: 10rem;
+  }
+
+  .pet-img {
+    height: 80%;
+    width: 20%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    
-    @media @desk {
-        height: 20rem;
+    justify-content: flex-end;
+
+    @media @tablet {
+      align-items: center;
     }
 
-    .pet-img {
-        height: 80%;
-        width: 20%;
-        display: flex;
-        justify-content: flex-end;
-        
-        img {
-            height: 4rem;
+    img {
+      height: 4rem;
 
-                @media @desk {
-                    height: 15rem;        
-                }
-        }
+      @media @desk {
+        height: 15rem;
+      }
     }
+  }
 }
-    
-    
-    .intro {
-        .margTB(6re, 6rem);
-        
+
+body {
+  line-height: 2;
+}
+
+.intro {
+  .margTB(6re, 6rem);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  h2 {
+    font-family: "Indie Flower", cursive;
+    align-self: center;
+    font-size: 3.75rem;
+    .margTB(2rem, 4rem);
+  }
+
+  h1 {
+    font-family: "Indie Flower", cursive;
+    align-self: center;
+    font-size: 8rem;
+    color: @intro-color;
+    .margTB(2rem, 2rem);
+  }
+}
+
+.main-content {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1.5rem;
+
+  .main-top {
+    h2 {
+      font-size: 2.8rem;
+      text-align: center;
+      .margTB(1rem; 5rem);
+
+      @media @desk {
+        width: 85%;
+        font-size: 6rem;
+        .margTB(12rem; 15rem);
+      }
+    }
+
+    img {
+      height: 60vh;
+      width: 95%;
+      margin-bottom: 4rem;
+
+      @media @tablet {
+        height: 90vh;
+        width: 97%;
+        align-self: center;
+        .margTB(3rem; 12rem);
+      }
+    }
+  }
+
+  .list-content {
+    width: 95%;
+    font-size: 1.8rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: lavenderblush;
+    border-radius: 0.5rem;
+    padding: 7px;
+
+    @media @desk {
+      font-size: 3.6rem;
+    }
+
+    .list {
+      width: 95%;
+      display: flex;
+      justify-content: center;
+      margin-top: 3rem;
+
+      ul {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        text-align: center;
-        
-        h2 {
-            font-family: 'Indie Flower', cursive;
-            align-self: center;
-            font-size: 3.75rem;
-            .margTB(2rem, 4rem);
-            
-            @media @desk {
-                
-            }    
-        }
-        
-        h1{
-            font-family: 'Indie Flower', cursive;
-            align-self: center;
-            font-size: 8rem;
-            color: @intro-color;
-            .margTB(2rem, 2rem);
-            
-            @media @desk {
-                
-            }
-        }
-    }
-
-    
-    .main-content {
-        width: 95%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: 1.5rem;
-        
-        .main-top {
-
-        h2{
-            
-            font-size: 2.8rem;
-            text-align: center;
-            .margTB(1rem; 5rem);
-            
-            @media @desk {
-                width: 85%;
-                font-size: 6rem;
-                .margTB(12rem; 15rem);
-            }
-        }
-        
-        img {
-            height: 60vh;
-            width: 95%;
-            margin-bottom: 4rem;
-    
-            @media @tablet {
-                height: 90vh;
-                width: 97%;
-                align-self: center;
-                .margTB(3rem; 12rem);
-            }
-        }
-    }
-
-    .list-content {
-
-        width: 95%;
-        font-size: 1.8rem;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        background-color: lavenderblush;
-        border-radius: .5rem;
-        padding: 7px;
+        width: 50%;
 
         @media @desk {
-            font-size: 3.6rem;
+          margin-top: 12rem;
         }
-        
-        
-        
-        .list {
-            width: 95%;
-            display: flex;
-            justify-content: center;
-            margin-top: 3rem;
-            
-            ul {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                width: 50%;
-                
-                @media @desk {
-                    margin-top: 12rem;
-                }
-                
-                li {
-                    list-style-type: circle;
-                    margin-top: 2rem;
-                    font-size: 1.6rem;
-                    color: darkblue;  
-                    
-                    @media @desk {
-                        font-size: 3.2rem;
-                        margin-top: 6rem;
-                    }
-                }
-            }
+
+        li {
+          list-style-type: circle;
+          margin-top: 2rem;
+          font-size: 1.6rem;
+          color: darkblue;
+
+          @media @desk {
+            font-size: 3.2rem;
+            margin-top: 6rem;
+          }
         }
+      }
     }
+  }
 }

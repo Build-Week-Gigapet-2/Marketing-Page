@@ -240,6 +240,12 @@ header .pet-img img {
     height: 15rem;
   }
 }
+@media (min-width:600px) {
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .intro {
   margin-top: 6re;
   margin-bottom: 6rem;
@@ -247,6 +253,11 @@ header .pet-img img {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+@media (min-width:600px) {
+  .intro {
+    justify-content: flex-start;
+  }
 }
 .intro h2 {
   font-family: 'Indie Flower', cursive;
@@ -269,6 +280,19 @@ header .pet-img img {
   flex-direction: column;
   justify-content: center;
   margin-left: 1.5rem;
+}
+@media (min-width:600px) {
+  .main-content {
+    flex-flow: row nowrap;
+  }
+}
+.main-content .main-top {
+  display: flex;
+}
+@media (min-width:600px) {
+  .main-content .main-top {
+    flex-direction: column-reverse;
+  }
 }
 .main-content .main-top h2 {
   font-size: 2.8rem;
@@ -311,6 +335,8 @@ header .pet-img img {
 @media (min-width:1024px) {
   .main-content .list-content {
     font-size: 3.6rem;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
   }
 }
 .main-content .list-content .list {

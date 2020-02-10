@@ -256,12 +256,10 @@ body {
   line-height: 2;
 }
 .intro {
-  margin-top: 6re;
+  margin-top: 6rem;
   margin-bottom: 6rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
 }
 .intro h2 {
   font-family: "Indie Flower", cursive;
@@ -364,13 +362,37 @@ body {
   justify-content: center;
   text-align: center;
 }
+@media (min-width:600px) {
+  #about {
+    width: 99.75%;
+  }
+  #about .member-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+  }
+}
+@media (min-width:600px) {
+  #about header {
+    width: 100%;
+  }
+}
 #about .intro {
   font-size: 3rem;
 }
 #about .main-content {
   border: 1px solid darkorchid;
+  display: flex;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+@media (min-width:600px) {
+  #about .main-content {
+    border: none;
+    width: 90%;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 #about .main-content .member {
   display: flex;
@@ -391,6 +413,12 @@ body {
   width: 85px;
   align-self: center;
 }
+@media (min-width:600px) {
+  #about .main-content .member .profile {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 #about .main-content .member h4 {
   font-size: 1.6rem;
 }
@@ -398,4 +426,11 @@ body {
   font-size: 1.2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+@media (min-width:600px) {
+  #about .main-content .member .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }

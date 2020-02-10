@@ -24,7 +24,7 @@ header {
       height: 4rem;
 
       @media @desk {
-        height: 15rem;
+        height: 10rem;
       }
     }
   }
@@ -39,11 +39,22 @@ body {
   display: flex;
   flex-direction: column;
 
+  @media @desk {
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 75%;
+  }
+
   h2 {
     font-family: "Indie Flower", cursive;
     align-self: center;
     font-size: 3.75rem;
     .margTB(2rem, 4rem);
+
+    @media @desk {
+      width: 12%;
+      text-align: center;
+    }
   }
 
   h1 {
@@ -52,6 +63,11 @@ body {
     font-size: 8rem;
     color: @intro-color;
     .margTB(2rem, 2rem);
+
+    @media @desk {
+      font-size: 12rem;
+      align-self: flex-start;
+    }
   }
 }
 
@@ -63,6 +79,10 @@ body {
   margin-left: 1.5rem;
 
   .main-top {
+    @media @desk {
+      display: flex;
+    }
+
     h2 {
       font-size: 2.8rem;
       text-align: center;

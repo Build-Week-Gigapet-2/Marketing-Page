@@ -1,6 +1,7 @@
 nav {
   width: 75%;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 
   @media @tablet {
@@ -13,8 +14,17 @@ nav {
     font-size: 1.2rem;
     color: @anch-color;
 
+    @media @tablet {
+      font-size: 4rem;
+    }
+
     &:hover {
       color: @anch-hov;
+      font-size: 2rem;
+
+      @media @tablet {
+        font-size: 6rem;
+      }
     }
   }
 }

@@ -405,8 +405,18 @@ body {
 #about .main-content .member h2 {
   font-size: 1.8rem;
 }
+@media (min-width:600px) {
+  #about .main-content .member h2 {
+    font-size: 3.5rem;
+  }
+}
 #about .main-content .member h3 {
   font-style: italic;
+}
+@media (min-width:600px) {
+  #about .main-content .member h3 {
+    font-size: 3rem;
+  }
 }
 #about .main-content .member .profile {
   height: 85px;
@@ -422,10 +432,20 @@ body {
 #about .main-content .member h4 {
   font-size: 1.6rem;
 }
+@media (min-width:600px) {
+  #about .main-content .member h4 {
+    font-size: 2.8rem;
+  }
+}
 #about .main-content .member p {
   font-size: 1.2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+@media (min-width:600px) {
+  #about .main-content .member p {
+    font-size: 2.4rem;
+  }
 }
 @media (min-width:600px) {
   #about .main-content .member .contact {

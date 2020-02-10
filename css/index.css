@@ -141,7 +141,7 @@ nav {
   }
 }
 nav a {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
   text-decoration: none;
   font-size: 1.2rem;
   color: limegreen;
@@ -154,16 +154,16 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
 @media (min-width:600px) {
   footer {
-    margin-top: 15rem;
-    margin-bottom: 9rem;
-    width: 50%;
-    justify-content: flex-start;
-    margin-left: 6rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    width: 90%;
+    margin-left: 2rem;
   }
 }
 footer .follow,
@@ -182,9 +182,10 @@ footer .git h3 {
 @media (min-width:600px) {
   footer .follow h3,
   footer .git h3 {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 4rem;
-    margin-bottom: 12rem;
-    align-self: flex-start;
+    margin-bottom: 6rem;
   }
 }
 footer .icon-container {
@@ -194,8 +195,7 @@ footer .icon-container {
 }
 @media (min-width:600px) {
   footer .icon-container {
-    width: 60%;
-    justify-content: flex-start;
+    margin-bottom: 6rem;
   }
 }
 footer .icon-container button {
@@ -206,12 +206,19 @@ footer .icon-container button {
 }
 @media (min-width:600px) {
   footer .icon-container button {
-    margin-right: 2rem;
+    width: 20%;
+    align-items: center;
   }
 }
 footer .icon-container button i {
   font-size: xx-large;
   align-self: center;
+}
+@media (min-width:600px) {
+  footer .icon-container button i {
+    height: 3.2rem;
+    width: 4.8rem;
+  }
 }
 header {
   height: 6rem;
@@ -221,9 +228,9 @@ header {
   justify-content: space-evenly;
   align-items: center;
 }
-@media (min-width:1024px) {
+@media (min-width:600px) {
   header {
-    height: 20rem;
+    height: 10rem;
   }
 }
 header .pet-img {
@@ -231,6 +238,11 @@ header .pet-img {
   width: 20%;
   display: flex;
   justify-content: flex-end;
+}
+@media (min-width:600px) {
+  header .pet-img {
+    align-items: center;
+  }
 }
 header .pet-img img {
   height: 4rem;
@@ -240,11 +252,8 @@ header .pet-img img {
     height: 15rem;
   }
 }
-@media (min-width:600px) {
-  main {
-    display: flex;
-    flex-direction: row;
-  }
+body {
+  line-height: 2;
 }
 .intro {
   margin-top: 6re;
@@ -254,20 +263,15 @@ header .pet-img img {
   justify-content: center;
   text-align: center;
 }
-@media (min-width:600px) {
-  .intro {
-    justify-content: flex-start;
-  }
-}
 .intro h2 {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
   align-self: center;
   font-size: 3.75rem;
   margin-top: 2rem;
   margin-bottom: 4rem;
 }
 .intro h1 {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
   align-self: center;
   font-size: 8rem;
   color: blueviolet;
@@ -280,19 +284,6 @@ header .pet-img img {
   flex-direction: column;
   justify-content: center;
   margin-left: 1.5rem;
-}
-@media (min-width:600px) {
-  .main-content {
-    flex-flow: row nowrap;
-  }
-}
-.main-content .main-top {
-  display: flex;
-}
-@media (min-width:600px) {
-  .main-content .main-top {
-    flex-direction: column-reverse;
-  }
 }
 .main-content .main-top h2 {
   font-size: 2.8rem;
@@ -335,8 +326,6 @@ header .pet-img img {
 @media (min-width:1024px) {
   .main-content .list-content {
     font-size: 3.6rem;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
   }
 }
 .main-content .list-content .list {

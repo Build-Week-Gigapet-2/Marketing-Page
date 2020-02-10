@@ -1,64 +1,64 @@
 footer {
-    width: 95%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .margTB(3rem, 3rem);
+
+  @media @tablet {
+    .margTB(6rem; 6rem);
+    width: 90%;
+    margin-left: 2rem;
+  }
+
+  .follow,
+  .git {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    .margTB(3rem, 3rem);
+    text-align: center;
+
+    h3 {
+      font-size: 2rem;
+      .margTB(3rem, 2rem);
+
+      @media @tablet {
+        .margTB(0, 0);
+        font-size: 4rem;
+        margin-bottom: 6rem;
+      }
+    }
+  }
+
+  .icon-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 
     @media @tablet {
-        .margTB(15rem; 9rem);
-        width: 50%;
-        justify-content: flex-start;
-        margin-left: 6rem;
+      margin-bottom: 6rem;
     }
-   
-    .follow, .git {
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
+    button {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.6rem;
+      height: 6rem;
 
-        h3 {
-           
-            font-size: 2rem;
-            .margTB(3rem, 2rem);
+      @media @tablet {
+        width: 20%;
+        align-items: center;
+      }
+      i {
+        font-size: xx-large;
+        align-self: center;
 
-            @media @tablet {
-                font-size: 4rem;
-                margin-bottom: 12rem;
-                align-self: flex-start;
-            }
+        @media @tablet {
+          height: 3.2rem;
+          width: 4.8rem;
         }
+      }
     }
-        
-        
-        
-        .icon-container {
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            
-            @media @tablet{
-                width: 60%;
-                justify-content: flex-start;
-            }
-            
-            button {
-                display: flex;
-                flex-direction: column;
-                font-size: 1.6rem;
-                height: 6rem;
-                
-                @media @tablet {
-                    margin-right: 2rem;
-                }
-                
-                
-                i {
-                    font-size: xx-large;
-                    align-self: center;
-                }
-            }
-        }
-    }
+  }
+}

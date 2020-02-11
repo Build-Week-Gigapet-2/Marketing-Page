@@ -1,0 +1,103 @@
+//about-page CSS styles
+
+#about {
+  width: 95%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  text-align: center;
+
+  @media @tablet {
+    width: 99.75%;
+
+    .member-content {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-between;
+    }
+  }
+
+  header {
+    @media @tablet {
+      width: 100%;
+    }
+  }
+
+  .intro {
+    font-size: 3rem;
+  }
+
+  .main-content {
+    border: 1px solid darkorchid;
+    display: flex;
+
+    @media @tablet {
+      border: none;
+      width: 90%;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .margTB(1rem; 1rem);
+
+    .member {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .margTB(2rem; 2rem);
+
+      h2 {
+        font-size: 1.8rem;
+
+        @media @tablet {
+          font-size: 3.5rem;
+        }
+      }
+
+      h3 {
+        font-style: italic;
+
+        @media @tablet {
+          font-size: 3rem;
+        }
+      }
+
+      .profile {
+        height: 85px;
+        width: 85px;
+        align-self: center;
+
+        @media @tablet {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+
+      h4 {
+        font-size: 1.6rem;
+
+        @media @tablet {
+          font-size: 2.8rem;
+        }
+      }
+
+      p {
+        font-size: 1.2rem;
+        .margTB(2rem; 2rem);
+
+        @media @tablet {
+          font-size: 2.4rem;
+        }
+      }
+
+      .contact {
+        @media @tablet {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}
